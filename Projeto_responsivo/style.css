@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+html{
+    font-family: sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Serif', serif;
+
+}
+.button{
+    display: inline-block;
+    padding: .9em 2.5em;
+    background: #58c4c4;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.button:hover{
+    background: #37a0a0;
+}
+.icon-play{
+    height: 5em;
+    display: none;
+}
+.icon-play img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+/* CABEÇALHO */
+.top-header{
+    text-align: center;
+}
+.clearfix:after , .row:after{
+    content: ' ';
+    display: block;
+    clear: both;
+
+}
+.top-header-logo{
+    margin: .5em;  /* img svg ,com isso dei um espaçamento nela em todas as partes*/
+}
+.top-nav{
+    background-color: #612674;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 0 0 rgba(0, 0, 0,0.1);
+}
+
+.top-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;  /* Para tirar os botões dá lista*/
+}
+.top-nav a{
+    color: white;
+    text-decoration: none;
+   
+    /* O font-size por padrão é 16px */
+    padding: 1em; /* O padding só é aplicado em elementos de blocos*/
+    display: block;
+}
+.top-nav a:hover{
+    background: #7c3792;
+    border-radius: 20px;
+}
+
+
+/* Corpo do texto */
+
+
+.top-content{
+    padding: 1em;
+    text-align: center;
+    background: #f6f6f6;
+}
+.top-content-title{
+    color: #612674;
+    font-size: 1.375em; /* 22px para ter isso basta dividir com o valor padrão do browser que é 16px*/
+    margin: 1.375em;
+}
+.top-content-subtitle{
+    color: #a87bb7;
+    font-size: 1em;
+    line-height: 1.5;
+
+}
+.middle-content{
+    padding: 2em;
+    background: #f6f6f6;
+    text-align: center;
+}
+.middle-content-title{
+    font-size: 1.25em;
+    color:#672e79;
+    text-transform: uppercase;
+}
+.middle-content p{
+    line-height: 1.5;
+    color: #222;
+}
+.main-content{
+    padding: 2em;
+}
+.main-content-article{
+    margin-bottom: 3.5em;
+}
+.main-content p{
+    line-height: 1.5;
+}
+.main-content-title{
+    font-size: 1.25em;
+    color:#672e79;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: normal;
+}
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+    
+}
+.footer{
+    background: #25303e;
+    color: #83969f;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.footer-menushare{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    background: #303d4c;
+    padding: .5em;
+    
+}
+.footer-menushare a{
+    font-size: 1.8em;
+    color: white;
+}
+ul{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+}
+
+
+@media screen and (min-width:48.75em){
+
+    .top-header-logo{
+        float: left;
+    }
+    .top-nav{
+        background: transparent;
+        float: right;
+        margin-top: 25px;
+    }
+    .icon-play{
+        
+        display: block;
+    }
+    .top nav ul{
+        margin: 0;
+        padding: 0;
+    }
+    .top-nav li{
+        display: inline-block;
+    }
+    .top-nav a{
+        color: #713a84;
+    }
+    .top-nav a:hover{
+        
+        background: #e7d9fd;
+    }
+
+
+    .top-content{
+        background: #521a66;
+        color: white;
+    }
+    .top-content-title,.top-content-subtitle{
+        
+        color: white;
+    }
+
+
+    .col-1_4{
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+
+    .main-content-article .button{
+        float: right;
+    }
+
+}
+@media screen and (min-width:62.5em){
+    .top-content{
+        background: #521a66 url(images/bg_topo_1198x670.jpg) ;
+        height: 15em;
+        padding-top: 15em;
+        background-position: center bottom;
+    }
+}
+@media screen and (min-width:74em){
+    .top-content{
+        background-image: url(images/bg_topo_1600x1374.jpg);
+        padding: 19em 15em 10em;
+        background-position: center top;
+        
+    }
+    .col-1_4{
+        width: 23% ;
+        margin: 1%;
+    }
+    .col-1_2{
+        width: 48%;
+        margin: 1%;
+        float: left;
+    }
+    .main-content-article .button{
+        float: none;
+    }
+
+}

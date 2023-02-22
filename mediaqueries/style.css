@@ -1,0 +1,22 @@
+
+body{
+    background: yellow;
+    margin: auto 0 auto 0;
+
+}
+@media screen and (min-width: 800px){
+    body{
+        background: blue;
+    }
+
+}
+@media screen and (min-width: 900px){
+    body{
+        background: green;
+        font-size: 80px;
+    }
+}
+div{
+    background-color: red;
+    width: 412px;
+}

@@ -1,0 +1,25 @@
+body{
+    font-family: arial;
+    font-size: 30px;
+    color: rgb(30, 0, 255);
+    background: black;
+}
+div{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    background: black;
+    border: 1px solid red;
+}
+
+
+/* after : Depois do link */
+/* before: Antes do link */
+/* content: serve para adicionar palavras no html */
+a:before{
+    content: "Link :";
+    content: "("attr(href)")";
+    display: inline-block;
+    margin: 0 10px;
+
+}
